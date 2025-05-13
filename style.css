@@ -1,0 +1,61 @@
+@import url(' https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+:root {
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0, 5);
+    --texto-fundo: rgba(58, 55, 94, 0, 3);
+}
+
+body {
+    cor de fundo: var(--cor-de-fundo);
+    cor: var(--branco);
+    família de fontes: 'Chakra Petch', sem serifa;
+}
+
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: coluna;
+    justificar-conteúdo: centro;
+    alinhar-itens: centro;
+    largura máxima: 1200px;
+    largura: 100%;
+    margem: 0 auto;
+}
+
+.titulo-principal {
+    alinhamento de texto: esquerda;
+    largura: 100%;
+    tamanho da fonte: 32px;
+}
+
+.titulo-principal span {
+    cor: var(--verde);
+}
+
+.botao {
+    família de fontes: "Chakra Petch", sans-serif;
+    cor de fundo: var(--botao-inativo);
+    cor: var(--branco);
+    exibição: flexível;
+    justificar-conteúdo: centro;
+    preenchimento: 1em;
+    tamanho da fonte: 18px;
+    alinhar-itens: centro;
+    largura: 100%;
+    border-bottom: 4px sólido var(--botao-ativo);
+    borda esquerda: 2px sólido var(--botao-ativo);
+    borda direita: 2px var sólido(--botao-ativo);
+    borda superior: nenhuma;
+}
+
+.botao:first-child {
+    raio-da-borda: 40px 40px 0 0;
+}
+
+.bottoms {
+    exibir: bloco;
+}
