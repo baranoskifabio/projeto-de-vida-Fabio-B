@@ -33,19 +33,17 @@ function calculaTempo(tempoObjetivo){
     segundos %= 60;
     minutos %=60;
     horas %=24;
+
     if(tempoFinal>0){
-
-    
-
-    return (dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos ");
+       return [dias, horas, minutos, segundos];
     }else{
-        return "Tempo Esgotado"
+        return [0,0,0,0];
     }
 }
 
 function atualizaCronometro(){
     for (let i=0; i<contadores.length; i++){
-        contadores[i].textContent=calculaTempo(tempos[i]);
+        document getElementById ("dias" + i). textContent = calculaTempo(tempos[i])[0]
     }
 }
 
